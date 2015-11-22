@@ -19,9 +19,9 @@ Print of old and new names
      number             name                               column            
     original          original                              name
 _____________________________________________________________________________
-1     1           tBodyAcc-mean()-X               t_body_linear_acc_mean_X               
-2     2           tBodyAcc-mean()-Y               t_body_linear_acc_mean_Y               
-3     3           tBodyAcc-mean()-Z               t_body_linear_acc_mean_Z               
+1     1           tBodyAcc-mean()-X       |        t_body_linear_acc_mean_X               
+2     2           tBodyAcc-mean()-Y       |        t_body_linear_acc_mean_Y               
+3     3           tBodyAcc-mean()-Z       |        t_body_linear_acc_mean_Z               
 4     4            tBodyAcc-std()-X                t_body_linear_acc_std_X               
 5     5            tBodyAcc-std()-Y                t_body_linear_acc_std_Y               
 6     6            tBodyAcc-std()-Z                t_body_linear_acc_std_Z               
