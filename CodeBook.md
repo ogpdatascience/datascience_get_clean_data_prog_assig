@@ -15,76 +15,74 @@ tBodyAcc: t_body_linear_acc, tGravityAcc: t_body_gravity_acc, tBodyGyro: t_body_
 fGravityAcc: f_body_gravity_acc, fBodyGyro: f_body_angular_vel, fBodyAccJerk: f_body_linear_acc_Jerk, fBodyGyroJerk: f_body_angular_vel_Jerk, fBodyAccMag: f_body_linear_acc_magnitude, fGravityAccMag: f_body_gravity_acc_magnitude, fBodyGyroMag: f_body_angular_vel_magnitude, fBodyGyroJerkMag: f_body_angular_vel_Jerk_magnitude, fBodyBodyAccJerkMag: f_body_linear_acc_Jerk_magnitude, fBodyBodyGyroMag: f_body_angular_vel_magnitude, fBodyBodyGyroJerkMag: f_body_angular_vel_Jerk_magnitude
 
 Print of old and new names
-    Column             column                               new
-     number             name                               column            
-    original          original                              name
-_____________________________________________________________________________
-1     1           tBodyAcc-mean()-X       |        t_body_linear_acc_mean_X               
-2     2           tBodyAcc-mean()-Y       |        t_body_linear_acc_mean_Y               
-3     3           tBodyAcc-mean()-Z       |        t_body_linear_acc_mean_Z               
-4     4            tBodyAcc-std()-X                t_body_linear_acc_std_X               
-5     5            tBodyAcc-std()-Y                t_body_linear_acc_std_Y               
-6     6            tBodyAcc-std()-Z                t_body_linear_acc_std_Z               
-41   41        tGravityAcc-mean()-X              t_body_gravity_acc_mean_X               
-42   42        tGravityAcc-mean()-Y              t_body_gravity_acc_mean_Y               
-43   43        tGravityAcc-mean()-Z              t_body_gravity_acc_mean_Z               
-44   44         tGravityAcc-std()-X               t_body_gravity_acc_std_X               
-45   45         tGravityAcc-std()-Y               t_body_gravity_acc_std_Y               
-46   46         tGravityAcc-std()-Z               t_body_gravity_acc_std_Z               
-81   81       tBodyAccJerk-mean()-X          t_body_linear_acc_Jerk_mean_X               
-82   82       tBodyAccJerk-mean()-Y          t_body_linear_acc_Jerk_mean_Y               
-83   83       tBodyAccJerk-mean()-Z          t_body_linear_acc_Jerk_mean_Z               
-84   84        tBodyAccJerk-std()-X           t_body_linear_acc_Jerk_std_X               
-85   85        tBodyAccJerk-std()-Y           t_body_linear_acc_Jerk_std_Y               
-86   86        tBodyAccJerk-std()-Z           t_body_linear_acc_Jerk_std_Z               
-121 121          tBodyGyro-mean()-X              t_body_angular_vel_mean_X               
-122 122          tBodyGyro-mean()-Y              t_body_angular_vel_mean_Y               
-123 123          tBodyGyro-mean()-Z              t_body_angular_vel_mean_Z               
-124 124           tBodyGyro-std()-X               t_body_angular_vel_std_X               
-125 125           tBodyGyro-std()-Y               t_body_angular_vel_std_Y               
-126 126           tBodyGyro-std()-Z               t_body_angular_vel_std_Z               
-161 161      tBodyGyroJerk-mean()-X         t_body_angular_vel_Jerk_mean_X               
-162 162      tBodyGyroJerk-mean()-Y         t_body_angular_vel_Jerk_mean_Y               
-163 163      tBodyGyroJerk-mean()-Z         t_body_angular_vel_Jerk_mean_Z               
-164 164       tBodyGyroJerk-std()-X          t_body_angular_vel_Jerk_std_X               
-165 165       tBodyGyroJerk-std()-Y          t_body_angular_vel_Jerk_std_Y               
-166 166       tBodyGyroJerk-std()-Z          t_body_angular_vel_Jerk_std_Z               
-201 201          tBodyAccMag-mean()       t_body_linear_acc_magnitude_mean               
-202 202           tBodyAccMag-std()        t_body_linear_acc_magnitude_std               
-214 214       tGravityAccMag-mean()      t_body_gravity_acc_magnitude_mean               
-215 215        tGravityAccMag-std()       t_body_gravity_acc_magnitude_std               
-227 227      tBodyAccJerkMag-mean()  t_body_linear_acc_Jerk_magnitude_mean               
-228 228       tBodyAccJerkMag-std()   t_body_linear_acc_Jerk_magnitude_std               
-240 240         tBodyGyroMag-mean()      t_body_angular_vel_magnitude_mean               
-241 241          tBodyGyroMag-std()       t_body_angular_vel_magnitude_std               
-253 253     tBodyGyroJerkMag-mean() t_body_angular_vel_Jerk_magnitude_mean               
-254 254      tBodyGyroJerkMag-std()  t_body_angular_vel_Jerk_magnitude_std               
-266 266           fBodyAcc-mean()-X               f_body_linear_acc_mean_X               
-267 267           fBodyAcc-mean()-Y               f_body_linear_acc_mean_Y               
-268 268           fBodyAcc-mean()-Z               f_body_linear_acc_mean_Z               
-269 269            fBodyAcc-std()-X                f_body_linear_acc_std_X               
-270 270            fBodyAcc-std()-Y                f_body_linear_acc_std_Y               
-271 271            fBodyAcc-std()-Z                f_body_linear_acc_std_Z               
-345 345       fBodyAccJerk-mean()-X          f_body_linear_acc_Jerk_mean_X               
-346 346       fBodyAccJerk-mean()-Y          f_body_linear_acc_Jerk_mean_Y               
-347 347       fBodyAccJerk-mean()-Z          f_body_linear_acc_Jerk_mean_Z               
-348 348        fBodyAccJerk-std()-X           f_body_linear_acc_Jerk_std_X               
-349 349        fBodyAccJerk-std()-Y           f_body_linear_acc_Jerk_std_Y               
-350 350        fBodyAccJerk-std()-Z           f_body_linear_acc_Jerk_std_Z               
-424 424          fBodyGyro-mean()-X              f_body_angular_vel_mean_X               
-425 425          fBodyGyro-mean()-Y              f_body_angular_vel_mean_Y               
-426 426          fBodyGyro-mean()-Z              f_body_angular_vel_mean_Z               
-427 427           fBodyGyro-std()-X               f_body_angular_vel_std_X               
-428 428           fBodyGyro-std()-Y               f_body_angular_vel_std_Y               
-429 429           fBodyGyro-std()-Z               f_body_angular_vel_std_Z               
-503 503          fBodyAccMag-mean()       f_body_linear_acc_magnitude_mean               
-504 504           fBodyAccMag-std()        f_body_linear_acc_magnitude_std               
-516 516  fBodyBodyAccJerkMag-mean()  f_body_linear_acc_Jerk_magnitude_mean               
-517 517   fBodyBodyAccJerkMag-std()   f_body_linear_acc_Jerk_magnitude_std               
-529 529     fBodyBodyGyroMag-mean()      f_body_angular_vel_magnitude_mean               
-530 530      fBodyBodyGyroMag-std()       f_body_angular_vel_magnitude_std               
-542 542 fBodyBodyGyroJerkMag-mean() f_body_angular_vel_Jerk_magnitude_mean               
-543 543  fBodyBodyGyroJerkMag-std()  f_body_angular_vel_Jerk_magnitude_std               
+ind | Column number original | column name original | new column name
+----|------------------------|----------------------|-------------------------------------
+1   |  1    |       tBodyAcc-mean()-X       |        t_body_linear_acc_mean_X               
+2   |  2    |       tBodyAcc-mean()-Y       |        t_body_linear_acc_mean_Y               
+3   |  3    |       tBodyAcc-mean()-Z       |        t_body_linear_acc_mean_Z               
+4   |  4    |        tBodyAcc-std()-X                t_body_linear_acc_std_X               
+5   |  5    |        tBodyAcc-std()-Y                t_body_linear_acc_std_Y               
+6   |  6    |        tBodyAcc-std()-Z                t_body_linear_acc_std_Z               
+41  | 41    |    tGravityAcc-mean()-X              t_body_gravity_acc_mean_X               
+42  | 42    |    tGravityAcc-mean()-Y              t_body_gravity_acc_mean_Y               
+43  | 43    |    tGravityAcc-mean()-Z              t_body_gravity_acc_mean_Z               
+44  | 44    |     tGravityAcc-std()-X               t_body_gravity_acc_std_X               
+45  | 45    |     tGravityAcc-std()-Y               t_body_gravity_acc_std_Y               
+46  | 46    |     tGravityAcc-std()-Z               t_body_gravity_acc_std_Z               
+81  | 81    |   tBodyAccJerk-mean()-X          t_body_linear_acc_Jerk_mean_X               
+82  | 82       tBodyAccJerk-mean()-Y          t_body_linear_acc_Jerk_mean_Y               
+83  | 83       tBodyAccJerk-mean()-Z          t_body_linear_acc_Jerk_mean_Z               
+84  | 84        tBodyAccJerk-std()-X           t_body_linear_acc_Jerk_std_X               
+85  | 85        tBodyAccJerk-std()-Y           t_body_linear_acc_Jerk_std_Y               
+86  | 86        tBodyAccJerk-std()-Z           t_body_linear_acc_Jerk_std_Z               
+121 |121          tBodyGyro-mean()-X              t_body_angular_vel_mean_X               
+122 |122          tBodyGyro-mean()-Y              t_body_angular_vel_mean_Y               
+123 |123          tBodyGyro-mean()-Z              t_body_angular_vel_mean_Z               
+124 |124           tBodyGyro-std()-X               t_body_angular_vel_std_X               
+125 |125           tBodyGyro-std()-Y               t_body_angular_vel_std_Y               
+126 |126           tBodyGyro-std()-Z               t_body_angular_vel_std_Z               
+161 |161      tBodyGyroJerk-mean()-X         t_body_angular_vel_Jerk_mean_X               
+162 |162      tBodyGyroJerk-mean()-Y         t_body_angular_vel_Jerk_mean_Y               
+163 |163      tBodyGyroJerk-mean()-Z         t_body_angular_vel_Jerk_mean_Z               
+164 |164       tBodyGyroJerk-std()-X          t_body_angular_vel_Jerk_std_X               
+165 |165       tBodyGyroJerk-std()-Y          t_body_angular_vel_Jerk_std_Y               
+166 |166       tBodyGyroJerk-std()-Z          t_body_angular_vel_Jerk_std_Z               
+201 |201          tBodyAccMag-mean()       t_body_linear_acc_magnitude_mean               
+202 |202           tBodyAccMag-std()        t_body_linear_acc_magnitude_std               
+214 |214       tGravityAccMag-mean()      t_body_gravity_acc_magnitude_mean               
+215 |215        tGravityAccMag-std()       t_body_gravity_acc_magnitude_std               
+227 |227      tBodyAccJerkMag-mean()  t_body_linear_acc_Jerk_magnitude_mean               
+228 |228       tBodyAccJerkMag-std()   t_body_linear_acc_Jerk_magnitude_std               
+240 |240         tBodyGyroMag-mean()      t_body_angular_vel_magnitude_mean               
+241 |241          tBodyGyroMag-std()       t_body_angular_vel_magnitude_std               
+253 |253     tBodyGyroJerkMag-mean() t_body_angular_vel_Jerk_magnitude_mean               
+254 |254      tBodyGyroJerkMag-std()  t_body_angular_vel_Jerk_magnitude_std               
+266 |266           fBodyAcc-mean()-X               f_body_linear_acc_mean_X               
+267 |267           fBodyAcc-mean()-Y               f_body_linear_acc_mean_Y               
+268 |268           fBodyAcc-mean()-Z               f_body_linear_acc_mean_Z               
+269 |269            fBodyAcc-std()-X                f_body_linear_acc_std_X               
+270 |270            fBodyAcc-std()-Y                f_body_linear_acc_std_Y               
+271 |271            fBodyAcc-std()-Z                f_body_linear_acc_std_Z               
+345 |345       fBodyAccJerk-mean()-X          f_body_linear_acc_Jerk_mean_X               
+346 |346       fBodyAccJerk-mean()-Y          f_body_linear_acc_Jerk_mean_Y               
+347 |347       fBodyAccJerk-mean()-Z          f_body_linear_acc_Jerk_mean_Z               
+348 |348        fBodyAccJerk-std()-X           f_body_linear_acc_Jerk_std_X               
+349 |349        fBodyAccJerk-std()-Y           f_body_linear_acc_Jerk_std_Y               
+350 |350        fBodyAccJerk-std()-Z           f_body_linear_acc_Jerk_std_Z               
+424 |424          fBodyGyro-mean()-X              f_body_angular_vel_mean_X               
+425 |425          fBodyGyro-mean()-Y              f_body_angular_vel_mean_Y               
+426 |426          fBodyGyro-mean()-Z              f_body_angular_vel_mean_Z               
+427 |427           fBodyGyro-std()-X               f_body_angular_vel_std_X               
+428 |428           fBodyGyro-std()-Y               f_body_angular_vel_std_Y               
+429 |429           fBodyGyro-std()-Z               f_body_angular_vel_std_Z               
+503 |503          fBodyAccMag-mean()       f_body_linear_acc_magnitude_mean               
+504 |504           fBodyAccMag-std()        f_body_linear_acc_magnitude_std               
+516 |516  fBodyBodyAccJerkMag-mean()  f_body_linear_acc_Jerk_magnitude_mean               
+517 |517   fBodyBodyAccJerkMag-std()   f_body_linear_acc_Jerk_magnitude_std               
+529 |529     fBodyBodyGyroMag-mean()      f_body_angular_vel_magnitude_mean               
+530 |530      fBodyBodyGyroMag-std()       f_body_angular_vel_magnitude_std               
+542 |542 fBodyBodyGyroJerkMag-mean() |f_body_angular_vel_Jerk_magnitude_mean               
+543 |543  fBodyBodyGyroJerkMag-std()  f_body_angular_vel_Jerk_magnitude_std               
 
 
 Units are described in the feature info from original file. I am pasting it below alonng with the description of the original features. The name change that I did to the features are described above.
