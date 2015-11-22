@@ -1,39 +1,23 @@
 **Readme file for Coursera Getting and Cleaning Data course program assigment.**
 
-**Indice**
+**Summary**
 1. Merges the training and the test sets to create one data set.
+
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+
 3. Uses descriptive activity names to name the activities in the data set
+
 4. Appropriately labels the data set with descriptive variable names.
+
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 **1. Merges the training and the test sets to create one data set.**
 
+First set working directory to where train and test folders are and get data from train folder using read.table()
+to add it to variables train_X for train data set, train_y for y_train and train_subjects for train subjects.
+Do the same for the test data set to add X_test, y_test and subject_test to the variables call test_X, test_y and test_subjects respectively. After that merge both train and test tables using rbind and get three new tables: merge_train_test_X, merge_train_test_y and merge_train_test_subjects.
 
-###########################
-#set working directory to where train and test folders are.
-#using setwd()
-
-##
-#get data from train folder using read.table()
-#and add it to variables
-#train_X for train data set
-#train_y for y_train
-#train_subjects for train subjects
-###
-#again use read.table to put X_test, y_test and subject_test
-#in thre variables call test_X, test_y and test_subjects
-###
-#merge both train and test tables using rbind
-#put them in the tables variables
-#merge_train_test_X
-#merge_train_test_y
-#merge_train_test_subjects
-##
-#The merge of these three tables will be done below 
-########################
-#2. 
-#Extracts only the measurements on the mean and standard deviation for each measurement.
+**2. Extracts only the measurements on the mean and standard deviation for each measurement.**
 
 #Read the file with features into R using read.table and put into
 #variable features
