@@ -1,4 +1,4 @@
-**Readme file for Coursera Getting and Cleaning Data course program assigment.**
+**README file for Coursera Getting and Cleaning Data course program assigment.**
 
 **Summary.**
 
