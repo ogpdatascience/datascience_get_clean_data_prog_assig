@@ -27,17 +27,7 @@ Use it to subset the dataset and get the columns for the mean and std features a
 
 **3. Uses descriptive activity names to name the activities in the data set to change the activities numbers by their name in the merge_train_test_y file.
 
-1 as "walking"
-
-2 as "walking_upstairs"
-
-3 as "walking_downstairs"
-
-4 as "sitting"
-
-5 as "standing"
-
-6 as"laying"
+1 as "walking", 2 as "walking_upstairs", 3 as "walking_downstairs", 4 as "sitting", 5 as "standing" and 6 as"laying"
 
 Check that the labellig was correctly implemented using command cbind(merge_train_test_y,rbind(train_y,test_y)) and visually check in rows that the naming correspond with the value (1-6) of the activities. 
 
@@ -53,5 +43,6 @@ Add the names to de data using colnames(merge_mean_std) <- features_my_mod and d
 Next step is to merge the merge_mean_std with the activities and subjects and add the columns names for both activities and subjects. The new data set is call **merge_data_set**
 
 **5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
+
 Approach this part using data.table package by first transform merge_data_set into data.table object **DT** and them apply the mean over columns by subjects and activities. This step will average each feature for each subject according to the activities describe above and create the **tidy_data_set** which is them save to disk with no row names.
 
