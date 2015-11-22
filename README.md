@@ -30,9 +30,13 @@ Use it to subset the dataset and get the columns for the mean and std features a
 1 as "walking"
 
 2 as "walking_upstairs"
+
 3 as "walking_downstairs"
+
 4 as "sitting"
+
 5 as "standing"
+
 6 as"laying"
 
 Check that the labellig was correctly implemented using command cbind(merge_train_test_y,rbind(train_y,test_y)) and visually check in rows that the naming correspond with the value (1-6) of the activities. 
